@@ -8,10 +8,10 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.teamcode.Common.Hardware;
 
-@Autonomous(name="ChloeAuto", group ="Auto") //Creates a new opmode. (name of opmode, name of group)
+@Autonomous(name="BlueAuto", group ="Auto") //Creates a new opmode. (name of opmode, name of group)
 // Auto(sequential): public abstract class "name" extend LinearOpMode
 //Telop(recursive): public abstract class "name" extend OpMode
-public abstract class ChloeAuto extends LinearOpMode { // Linear opmode means once u finish code u exit it. regular opmode means you continuously go in a loop
+public abstract class BlueAuto extends LinearOpMode { // Linear opmode means once u finish code u exit it. regular opmode means you continuously go in a loop
     // abstract class means you can't have child classes
     Hardware robot = new Hardware();
     final double CLICKSPERINCH = 537/10.0;
@@ -27,9 +27,6 @@ public abstract class ChloeAuto extends LinearOpMode { // Linear opmode means on
         dipatch.RunForInches(10);
 
 
-
-    }
-    public void Turn (){
 
     }
 
