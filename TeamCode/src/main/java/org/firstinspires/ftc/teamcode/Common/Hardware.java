@@ -19,14 +19,14 @@ public class Hardware { //all objects we need
     // access hardware map on drive station:
     HardwareMap access = null;
 
-    public Hardware(){ //empty constructor (defult)
+    public Hardware(){ //empty constructor (default)
     }
     // code below plays once the driver hub is initialized
     public void init(HardwareMap hwMapP){ // void: doesn't affect code (basically a method like print unlike return that affects code
         access = hwMapP; // this is a void because it is in the same class so it doesn't affect anything
 
-        lf = access.get(DcMotorEx.class, "left_back"); //class.method
-        lb = access.get(DcMotorEx.class, "left_front");// we can name these motors whatever we want :)))
+        lf = access.get(DcMotorEx.class, "left_front"); //class.method
+        lb = access.get(DcMotorEx.class, "left_back");// we can name these motors whatever we want :)))
         rf = access.get(DcMotorEx.class, "right_front"); // these strings must always match what is named in the driver hub
         rb = access.get(DcMotorEx.class, "right_back");
 
