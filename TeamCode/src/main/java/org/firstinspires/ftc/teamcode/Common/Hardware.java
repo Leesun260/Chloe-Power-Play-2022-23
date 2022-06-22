@@ -40,10 +40,10 @@ public class Hardware { //all objects we need
         rb.setPower(0);
 
         //directions for motors
-        lf.setDirection(DcMotorEx.Direction.REVERSE);
+        lf.setDirection(DcMotorEx.Direction.REVERSE);// creating your own data structure --> enumerated data type (in this case we are creating enumerated data types because there is no data type for direction
         lb.setDirection(DcMotorEx.Direction.REVERSE);
         rf.setDirection(DcMotorEx.Direction.REVERSE);
-        rb.setDirection(DcMotorEx.Direction.REVERSE);// no actual data type for direction. Direction has 2 states: froward and reverse
+        rb.setDirection(DcMotorEx.Direction.REVERSE);// no actual data type for direction. Direction has 2 states: froward and reverse are our enumerated data types
 
         lf.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
         lb.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
