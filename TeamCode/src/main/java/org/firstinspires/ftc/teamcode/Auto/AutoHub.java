@@ -21,6 +21,7 @@ public class AutoHub {
 
         robot = new Hardware();
         robot.init(hardwareMap);
+        RunFor5Seconds();
 
     }
 
@@ -46,7 +47,9 @@ public class AutoHub {
         robot.rf.setPower(0);
         robot.rb.setPower(0);
 
-        public void RunFor5Seconds; ( int secondss;){
+    }
+
+        public void RunFor5Seconds(int secondss){
             while (linear.opModeIsActive()) {// opMode is activated for the time less than 30 sec or whatever time set (time set for opMode)
                 while (runtime.seconds() <= secondss) {
                     robot.lf.setPower(1);
@@ -62,6 +65,8 @@ public class AutoHub {
             }
         }
 
+        /*
+
         public void Turn(int deg){
             // s=r(theta)
             Object rad;
@@ -76,11 +81,9 @@ public class AutoHub {
 
         }
 
+         */
 
 
-
-
-}
 
 }
 

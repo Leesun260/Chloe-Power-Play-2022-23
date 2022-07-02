@@ -173,7 +173,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Fixes [ftc_app issue 673](https://github.com/ftctechnh/ftc_app/issues/673) Latest matchlog is being deleted instead of old ones by RobotLog
 * Fixes ConceptVuforiaUltimateGoalNavigationWebcam sample opmode by correctly orienting camera on robot.
 * Fixes issue where logcat would be spammed with InterruptedExceptions when stop is requested from the Driver Station (this behavior was accidentally introduced in v5.3). This change has no impact on functionality.
-* Fixes issue where the blocks editor fails to load if the name of any TeleOp opmode contains an apostrophe.
+* Fixes issue where the blocks editor fails to load if the name of any org.firstinspires.ftc.teamcode.TeleOp opmode contains an apostrophe.
 
 ## Version 6.1 (20201209-113742)
 * Makes the scan button on the configuration screen update the list of Expansion Hubs connected via RS-485
@@ -188,7 +188,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Adds support for the Control Hub OS 1.1.2 Robot Controller watchdog
     * The Robot Controller app will be restarted if it stops responding for more than 10 seconds
 * Adds support for using the Driver Station app on Android 10+
-* Introduces an automatic TeleOp preselection feature
+* Introduces an automatic org.firstinspires.ftc.teamcode.TeleOp preselection feature
     * For details and usage guide, please see [this wiki entry](https://github.com/FIRST-Tech-Challenge/FtcRobotController/wiki/Automatically-Loading-a-Driver-Controlled-Op-Mode)
 * Shows icon next to OpMode name in the OpMode list dropdown on the Driver Station to indicate the source of the OpMode (i.e. the programming tool used to create it)
 * Fixes issue where the Driver Station app would exit after displaying the Configuring Wi-Fi Direct screen
@@ -627,7 +627,7 @@ Changes include:
     - Added an external sample Op Mode that demonstrates localization using 2018-2019 (Rover Ruckus presented by QualComm) Vuforia targets.
     - Added an external sample Op Mode that demonstrates how to use the REV Robotics 2m Laser Distance Sensor.
     - Added an external sample Op Mode that demonstrates how to use the REV Robotics Blinkin LED Controller.
-    - Re-categorized external Java sample Op Modes to "TeleOp" instead of "Autonomous".
+    - Re-categorized external Java sample Op Modes to "org.firstinspires.ftc.teamcode.TeleOp" instead of "Autonomous".
 
 Known issues:
  * Initial support for UVC compatible cameras
@@ -898,7 +898,7 @@ Changes include:
      - Added logging when a blocks file is read/written.
      - Fixed bug to properly render blocks even if missing devices from configuration file.
      - Added support for additional characters (not just alphanumeric) for the block file names (for download and upload).
-     - Added support for OpMode flavor (“Autonomous” or “TeleOp”) and group.
+     - Added support for OpMode flavor (“Autonomous” or “org.firstinspires.ftc.teamcode.TeleOp”) and group.
   * Changes to Samples to prevent tutorial issues.
   * Incorporated suggested changes from public pull 216 (“Replace .. paths”).
   * Remove Servo Glitches when robot stopped.
